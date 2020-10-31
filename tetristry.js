@@ -209,14 +209,14 @@ document.addEventListener("DOMContentLoaded",() =>{
 
     function subirDeNivel(){
         if(scoreDisplay.innerHTML < 10) {nivelActual.innerHTML = 1; nivelo = 1;};
-        if(scoreDisplay.innerHTML >= 10){nivelActual.innerHTML = 2; nivelo = 2; dificultyUp();};
-        if(scoreDisplay.innerHTML >= 20){nivelActual.innerHTML = 3; nivelo = 3; dificultyUp();};
-        if(scoreDisplay.innerHTML >= 30){nivelActual.innerHTML = 4; nivelo = 4; dificultyUp();};
-        if(scoreDisplay.innerHTML >= 40){nivelActual.innerHTML = 5; nivelo = 5; dificultyUp();};
-        if(scoreDisplay.innerHTML >= 50){nivelActual.innerHTML = 6; nivelo = 6; dificultyUp();};
-        if(scoreDisplay.innerHTML >= 60){nivelActual.innerHTML = 7; nivelo = 7; dificultyUp();};
-        if(scoreDisplay.innerHTML >= 70){nivelActual.innerHTML = 8; nivelo = 8; dificultyUp();};
-        if(scoreDisplay.innerHTML >= 80){nivelActual.innerHTML = 9; nivelo = 9; dificultyUp();};
+        if(scoreDisplay.innerHTML >= 50){nivelActual.innerHTML = 2; nivelo = 2; dificultyUp();};
+        if(scoreDisplay.innerHTML >= 100){nivelActual.innerHTML = 3; nivelo = 3; dificultyUp();};
+        if(scoreDisplay.innerHTML >= 150){nivelActual.innerHTML = 4; nivelo = 4; dificultyUp();};
+        if(scoreDisplay.innerHTML >= 200){nivelActual.innerHTML = 5; nivelo = 5; dificultyUp();};
+        if(scoreDisplay.innerHTML >= 250){nivelActual.innerHTML = 6; nivelo = 6; dificultyUp();};
+        if(scoreDisplay.innerHTML >= 300){nivelActual.innerHTML = 7; nivelo = 7; dificultyUp();};
+        if(scoreDisplay.innerHTML >= 350){nivelActual.innerHTML = 8; nivelo = 8; dificultyUp();};
+        if(scoreDisplay.innerHTML >= 500){nivelActual.innerHTML = 9; nivelo = 9; dificultyUp();};
         
     }
 
@@ -260,7 +260,7 @@ document.addEventListener("DOMContentLoaded",() =>{
         function dificultyUp() {
             if(estadoVital.innerHTML==="Vivo"){
             clearInterval(timerId);
-            velocidad = 1000 - (nivelo*150);
+            velocidad = 1000 - (nivelo*85);
             timerId = setInterval(moveDown, velocidad);
         }
         }
