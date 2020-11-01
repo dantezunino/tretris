@@ -3,12 +3,21 @@ body{
 }
 
 .mensaje{
-    margin-left: 40px;
-    margin-top: 50px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-right: 20px;
     box-shadow: 0 4px 8px 0 rgb(42, 54, 63);
     text-align: justify;
     background-color: rgba(240, 222, 142, 0.87);
+    display: flex;
+    flex-direction: row-reverse;
+
+
+}
+
+.mensaje button{
+    background-color: cadetblue;
+    border-style: none;
 }
 
 .mensaje a{
@@ -17,7 +26,7 @@ body{
 }
 
 .containerl{
-    margin-top: 50px;
+    margin-top: 30px;
     margin-left: 279px;
     margin-right: 279px;
     display: flex;
@@ -28,13 +37,12 @@ body{
 }
 
 .instructions{
-    margin: auto;
     border: solid;
     border-color: black;
     box-sizing: border-box;
     background-color: darkcyan;
     height: 440px;
-    width: fit-content;
+    width: 210px;
     box-shadow: 0 4px 8px 0 rgb(42, 54, 63);
     padding-right: initial;
 }
@@ -52,8 +60,7 @@ body{
     border-color: black;
     text-align: center;
     margin-top: 40px;
-    width: max-content;
-    font-size: 26px;
+    font-size: 25px;
 }
 
 

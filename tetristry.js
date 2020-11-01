@@ -275,6 +275,22 @@ document.addEventListener("DOMContentLoaded",() =>{
         }
     }
 
+    document.getElementById("inglesio").addEventListener("click", englishP);
 
+    var count = 0;
+
+    function englishP(){
+        var enEspañol = "<p>Bienvenido. Éste juego de Tetris está hecho en base a un <a>tutorial de Ania Kubów</a> al que se le han agregado nuevas piezas, se corrigió el bug al girar las piezas, se le agregó un botón de reinicio, un cartel de estado y niveles, se agregó un modificador a la velocidad vinculada al nivel. El diseño es propio.</p>";
+        var enIngles = "<p>Welcome. This Tetris game has been made following an <a>Ania Kubów tutorial</a>. It's been added new pieces, a bug has been corrected, a restart button has been added, a sign indicating the state of the game and levels has been added and a speed modifier link to the level too. The poorly desing is mine.</p>";
+        
+        
+        if(count===1){document.getElementById("mensa").innerHTML= enEspañol; count=0;}
+        else{document.getElementById("mensa").innerHTML= enIngles; count++;}
+        console.log(count);
+    }
+
+    document.getElementById("mensa").addEventListener("click", hyperBoy);
+
+    function hyperBoy(){window.open("https://www.youtube.com/watch?v=rAUn1Lom6dw");}
 
 })
